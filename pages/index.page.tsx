@@ -5,7 +5,7 @@ import SearchIcon from "@/public/icons/search-icon";
 import Switch from "@/elements/switch";
 import Text from "@/elements/text";
 import { theme } from "@/styles/theme";
-import useGetUserData from "./hooks/useGetUserData";
+import useGetUserData from "../hooks/useGetUserData";
 import { useInView } from "react-intersection-observer";
 import { Loader } from "@mantine/core";
 import Card from "@/elements/card";
