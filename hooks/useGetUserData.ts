@@ -24,13 +24,15 @@ const fetchUsers = async (pageParam: number, searchValue: string) => {
   return {
     data:
       searchValue.length === 0
-        ? res.data.map((item: { [key: string]: string | number }) => ({
+        ? res &&
+          res.data.map((item: { [key: string]: string | number }) => ({
             id: item.id,
             name: item.login,
             avatarUrl: item.avatar_url,
             selected: false,
           }))
-        : searchRes.data.items.map((item: { [key: string]: string | number }) => ({
+        : searchRes &&
+          searchRes.data.items.map((item: { [key: string]: string | number }) => ({
             id: item.id,
             name: item.login,
             avatarUrl: item.avatar_url,

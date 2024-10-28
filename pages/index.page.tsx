@@ -113,7 +113,9 @@ const RootPage = () => {
             {/* 검색 결과가 없을 때 메시지 표시 */}
             {data?.pages[0].data.length === 0 && (
               <Text size="body3" color={theme.colors.gray[9]}>
-                "<b>{searchValue}</b>"에 대한 검색 결과가 없습니다.
+                {`"`}
+                <b>{searchValue}</b>
+                {`"`}에 대한 검색 결과가 없습니다.
               </Text>
             )}
           </Frame>
