@@ -4,6 +4,11 @@
 
 ## 실행 방법
 
+**정상 작동할 경우:**
+
+1. 패키지 설치: `pnpm install`
+2. 개발 서버 실행: `pnpm run dev`
+
 **(Github API의 트래픽 제한으로 인해 제대로 동작하지 않을 경우, 1번부터 순서대로 해당됩니다.)**
 
 1. [이 링크](https://drive.google.com/file/d/1CCK2hkFA0cLqOLjP5hnxb40oobVfwTTT/view?usp=sharing)에서 `.env` 파일을 다운로드합니다.
