@@ -1,40 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GitHub 유저 검색 및 북마크 서비스
 
-## Getting Started
+이 프로젝트는 Next.js와 TypeScript를 기반으로 하며, Mantine UI와 Emotion을 사용하여 컴포넌트 스타일을 적용합니다. 또한, React Query와 React Intersection Observer를 활용하여 무한 스크롤 기능을 구현하였습니다.
 
-First, run the development server:
+## 실행 방법
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. 패키지 설치: `pnpm install`
+2. 개발 서버 실행: `pnpm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 주요 기능
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- 무한 스크롤: React Query와 React Intersection Observer를 활용하여 사용자의 목록을 무한 스크롤로 불러옵니다.
+- 세션 저장소: 새로 고침이 되어도 북마크한 상태 값이 변경되지 않도록 sessionStorage를 사용하여 상태를 관리합니다.
+- GitHub API 활용:
+  - 사용자 전체 조회 API
+  - 사용자 검색 API
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+### 주요 사용 기술 스택 및 라이브러리
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- next.js
+- typeScript
+- mantine
+- emotion
+- axios
+- react-query
+- react-intersection-observer
