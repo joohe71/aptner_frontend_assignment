@@ -4,8 +4,14 @@
 
 ## 실행 방법
 
-1. 패키지 설치: `pnpm install`
-2. 개발 서버 실행: `pnpm run dev`
+**(Github API의 트래픽 제한으로 인해 제대로 동작하지 않을 경우, 1번부터 순서대로 해당됩니다.)**
+
+1. [이 링크](https://drive.google.com/file/d/1CCK2hkFA0cLqOLjP5hnxb40oobVfwTTT/view?usp=sharing)에서 `.env` 파일을 다운로드합니다.
+2. 다운로드한 파일의 내용을 복사합니다.
+3. 프로젝트의 루트 위치에 `.env` 파일을 생성합니다.
+4. 생성한 `.env` 파일에 복사한 내용을 붙여넣습니다.
+5. 패키지 설치: `pnpm install`
+6. 개발 서버 실행: `pnpm run dev`
 
 ### 주요 기능
 
