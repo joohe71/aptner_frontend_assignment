@@ -6,6 +6,9 @@ const fetchUsers = async (pageParam: number, searchValue: string) => {
   // 검색어가 없을 경우 GitHub 사용자 목록 API 호출
   const res = await (searchValue.length === 0 &&
     axios.get("https://api.github.com/users", {
+      headers: {
+        Authorization: process.env.NEXT_PUBLIC_TOKEN && `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
+      },
       params: {
         per_page: 20,
         since: (pageParam - 1) * 20, // 다음 사용자 시작 위치
@@ -15,6 +18,9 @@ const fetchUsers = async (pageParam: number, searchValue: string) => {
   // 검색어가 있을 경우 GitHub 사용자 검색 API를 호출
   const searchRes = await (searchValue.length > 0 &&
     axios.get("https://api.github.com/search/users", {
+      headers: {
+        Authorization: process.env.NEXT_PUBLIC_TOKEN && `Bearer ${process.env.NEXT_PUBLIC_TOKEN}`,
+      },
       params: {
         per_page: 20,
         page: pageParam,
