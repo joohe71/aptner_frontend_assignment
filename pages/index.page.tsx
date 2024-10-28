@@ -111,7 +111,7 @@ const RootPage = () => {
               </Text>
             )}
             {/* 검색 결과가 없을 때 메시지 표시 */}
-            {data?.pages[0].data.length === 0 && (
+            {!checked && data?.pages[0].data.length === 0 && (
               <Text size="body3" color={theme.colors.gray[9]}>
                 {`"`}
                 <b>{searchValue}</b>
@@ -151,6 +151,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 `;
 
 const LoaderWrapper = styled.div`
